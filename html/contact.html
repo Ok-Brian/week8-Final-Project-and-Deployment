@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Mumbo & Co. Pharmacy</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Mumbo and Co Pharmacy"><div class="logo-circle" aria-hidden="true"><span class="logo-leaf">✳</span></div><div class="brand-text"><h1>Mumbo & Co.</h1><span class="sub">Pharmacy</span></div></a>
+      <button id="btn-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation"><span class="hamburger"></span></button>
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="../html/index.html" class="nav-link">Home</a></li>
+          <li><a href="../html/about.html" class="nav-link">About</a></li>
+          <li><a href="../html/services.html" class="nav-link">Services</a></li>
+          <li><a href="../html/contact.html" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container contact-page">
+    <section class="page-header">
+      <h2>Contact Us</h2>
+      <p class="lead">Send us a message or book a consultation — we'll get back to you shortly.</p>
+    </section>
+
+    <section class="contact-grid">
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required placeholder="Your full name">
+          <small class="error" id="error-name" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com">
+          <small class="error" id="error-email" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required rows="5" placeholder="How can we help?"></textarea>
+          <small class="error" id="error-message" aria-live="polite"></small>
+        </div>
+
+        <div class="form-row">
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </div>
+
+        <div id="form-feedback" class="form-feedback" role="status" aria-live="polite"></div>
+      </form>
+
+      <aside class="contact-details">
+        <h3>Visit or Call</h3>
+        <p>123 Health St., Nairobi</p>
+        <p><a href="tel:+254742367916">+254 742367916</a></p>
+        <h4>Opening Hours</h4>
+        <ul>
+          <li>Mon-Fri: 8:00 - 18:00</li>
+          <li>Sat: 9:00 - 15:00</li>
+          <li>Sun: Closed</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Mumbo & Co. Pharmacy</h4>
+        <p>Trusted by generations, powered by passion.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address>
+          123 Health St.<br>
+          Nairobi, Kenya<br>
+          <a href="tel:+254742367916">+254 700 000 000</a>
+        </address>
+      </div>
+    </div>
+    <div class="legal container">
+      <small>© <span id="year"></span> Mumbo & Co. Pharmacy. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

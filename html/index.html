@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mumbo & Co. Pharmacy — Home</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand" aria-label="Mumbo and Co Pharmacy">
+        <div class="logo-circle" aria-hidden="true">
+          <!-- simple typographic logo -->
+          <span class="logo-leaf">✳</span>
+        </div>
+        <div class="brand-text">
+          <h1>Mumbo & Co.</h1>
+          <span class="sub">Pharmacy</span>
+        </div>
+      </a>
+
+      <button id="btn-nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+
+      <nav id="main-nav" class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="contact.html" class="nav-link nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <h2 class="eyebrow">Trusted by generations</h2>
+          <h3 class="headline">Mumbo & Co. Pharmacy</h3>
+          <p class="lead">Trusted by generations, powered by passion. Prescription services, clinical consultation, and trusted health products.</p>
+          <div class="hero-cta">
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+            <a href="contact.html" class="btn btn-ghost">Get in Touch</a>
+          </div>
+        </div>
+
+        <div class="hero-media" aria-hidden="true">
+          <div class="card-slider" id="card-slider">
+            <div class="slide"> <img src="../images/shelves.jpg" alt="pharmacy shelves" loading="lazy"> </div>
+            <div class="slide"> <img src="../images/appointment.jpg" alt="pharmacist helping customer" loading="lazy"> </div>
+            <div class="slide"> <img src="../images/medicines.jpg" alt="health products" loading="lazy"> </div>
+            
+          </div>
+          <div class="slider-controls">
+            <button class="slider-btn" id="prev-slide" aria-label="Previous slide">‹</button>
+            <button class="slider-btn" id="next-slide" aria-label="Next slide">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features container">
+      <article class="feature-card">
+        <h4>Prescription Services</h4>
+        <p>Fast, accurate dispensing with pharmacist consultations.</p>
+      </article>
+      <article class="feature-card">
+        <h4>Clinical Advice</h4>
+        <p>Private consultations for medication advice and minor ailments.</p>
+      </article>
+      <article class="feature-card">
+        <h4>Reliable Products</h4>
+        <p>Quality health products, vitamins, and wellness essentials.</p>
+      </article>
+    </section>
+
+    <section class="about-preview container">
+      <div class="about-inner">
+        <div>
+          <h3>Our Story</h3>
+          <p>For generations Mumbo & Co. has served the community with care and trusted expertise. Our pharmacists combine modern knowledge with warm, personalized service.</p>
+          <a href="about.html" class="btn btn-outline">Learn More</a>
+        </div>
+        <div class="stats-grid" aria-hidden="true">
+          <div class="stat">
+            <strong>50+</strong>
+            <span>Years</span>
+          </div>
+          <div class="stat">
+            <strong>10k+</strong>
+            <span>Happy Customers</span>
+          </div>
+          <div class="stat">
+            <strong>24/7</strong>
+            <span>Support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <h4>Mumbo & Co. Pharmacy</h4>
+        <p>Trusted by generations, powered by passion.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <address>
+          123 Health St.<br>
+          Nairobi, Kenya<br>
+          <a href="tel:+254700000000">+254 700 000 000</a>
+        </address>
+      </div>
+    </div>
+
+    <div class="legal container">
+      <small>© <span id="year"></span> Mumbo & Co. Pharmacy. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="../js/script.js" defer></script>
+</body>
+</html>
